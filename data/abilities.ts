@@ -279,7 +279,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	asonespectrier: {
 		onPreStart(pokemon) {
 			this.add('-ability', pokemon, 'As One');
-			this.add('-ability', pokemon, 'Unnerve');
+			this.add('-ability', pokemon, 'Prism Armor');
 			this.effectState.unnerved = true;
 		},
 		onEnd() {
@@ -295,6 +295,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
 		name: "As One (Spectrier)",
+		rating: 3.5,
+		num: 267,
+	},
+	asonelunala: {
+		onPreStart(pokemon) {
+			this.add('-ability', pokemon, 'As One');
+			this.add('-ability', pokemon, 'Shadow Shield');
+			this.add('-ability', pokemon, 'Prism Armor');
+			this.effectState.unnerved = true;
+		},
+		flags: {failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1},
+		name: "As One (Lunala)",
 		rating: 3.5,
 		num: 267,
 	},
